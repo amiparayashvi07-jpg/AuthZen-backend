@@ -12,7 +12,10 @@ const port = process.env.PORT || 3000;
 connectDB();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+origin: "https://auth-zen-p068svghv-yashvi-0a95.vercel.app/",
+credentials: true
+}));
 app.use(cookieParser());
 
 
