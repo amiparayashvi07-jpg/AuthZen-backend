@@ -13,7 +13,7 @@ connectDB();
 
 app.use(express.json());
 app.use(cors({
-origin: "https://auth-zen-p068svghv-yashvi-0a95.vercel.app",
+origin: "https://auth-zen-oyrm0r3qq-yashvi-0a95.vercel.app",
 credentials: true
 }));
 app.use(cookieParser());
