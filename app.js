@@ -12,12 +12,13 @@ const port = process.env.PORT || 3000;
 connectDB();
 
 app.use(express.json());
-app.use(cors({
-origin: "https://auth-zen-oyrm0r3qq-yashvi-0a95.vercel.app",
-credentials: true
-}));
+app.use(
+  cors({
+    origin: "https://auth-zen-ui.vercel.app",
+    credentials: true,
+  }),
+);
 app.use(cookieParser());
-
 
 app.use("/api/auth", authRouter);
 
